@@ -14,6 +14,7 @@
                 function myFunctio() {
                     var string="http://api.weatherapi.com/v1/current.json?key=8c5f003c6ab643c687185056212512&q=";
                 var request = new XMLHttpRequest();
+                   console.log(" here ");
     request.open('GET', (string+document.getElementById('fname').value),false);
     request.send();
     console.log(JSON.parse(request.response).current);
